@@ -5,65 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>RPG Dice Roller</title>
+    <title>Dice Dice Baby</title>
     
     <link rel="stylesheet" href="/css/style.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     
-    <script type="module">
-    import { DiceRoller } from '/lib/esm/bundle.min.js';
-    const diceRoller = new DiceRoller();
-    window.roll = () => {
-      const value = document.getElementById('input').value;
-      const value2 = document.getElementById('input2').value;
-      diceRoller.roll(value + value2);
-      document.getElementById('output').value = diceRoller.output;
-    };
-    window.clearLog = () => {
-      diceRoller.clearLog();
-      document.getElementById('output').value = diceRoller.output;
-    };
-  </script>
+
+   <script src="./js/script.js" type="module"></script>
 </head>
 
 <body>
   <header id="header">
-    <h1>RPG Dice Roller</h1>
+    <h1>Dice Dice Baby</h1>
   </header>
 
   <main id="main">
+  <label for="input">Input</label>
     <form action="" onsubmit="roll(); return false;">
-          <input list="nDice" placeholder="Number of Dice" type="number" autofocus id="input">
-  
-      <input list="tDice" placeholder="Select Dice Type" type="text" autofocus id="input2">
+        
+        <input list="nDice" placeholder="Number of Dice" type="number" autofocus id="number">
+        <br>
+        <input list="tDice" placeholder="Select Dice Type" type="text" autofocus id="type">
         <datalist id="tDice">
-               <option value = "d2">
-               <option value = "d3">
-               <option value = "d4">
-               <option value = "d6">
-               <option value = "d8">
-               <option value = "d10">
-               <option value = "d12">
-               <option value = "d20">
-               <option value = "d100">   
+            <option value = "d2">
+            <option value = "d4">
+            <option value = "d6">
+            <option value = "d8">
+            <option value = "d10">
+            <option value = "d12">
+            <option value = "d20">
+            <option value = "d100">   
         </datalist>     
-
+        <br>
+        <input list="bonus" placeholder="Add Bonus" type="number" autofocus id="bonus">
+        <br>
+        <input list="sDice" placeholder="Option" type="text" autofocus id="special">
+        <datalist id="sDice">
+               <option value = "Get Max Roll">
+               <option value = "Get Min Roll">
+               <option value = "Dice Explosion!"> 
+        </datalist>     
+        <br>
       <button type="submit">Roll</button>
     </form>
-
     <div>
       <label for="output">Output</label>
-
       <div>
         <textarea rows="1" id="output" readonly placeholder="No dice rolled"></textarea>
       </div>
-
-      <button onclick="clearLog(); return false;">Clear log</button>
+    </div>
+    <div class="pictures">
+    
+    
     </div>
 
-    
   </main>
 
   <hr>
