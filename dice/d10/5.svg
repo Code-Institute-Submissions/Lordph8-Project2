@@ -24,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -59,12 +59,12 @@
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:-1.75px;word-spacing:0px;text-anchor:middle;fill:#626262;fill-opacity:1;stroke:none"
-     x="12.116696"
+     x="12.512197"
      y="15.370901"
      id="text3966"><tspan
        sodipodi:role="line"
        id="tspan3964"
-       x="11.241696"
+       x="11.637197"
        y="15.370901"
        style="line-height:2;letter-spacing:-1.75px">5</tspan></text>
 </svg>
