@@ -16,21 +16,21 @@ Gets the worst roll result from the selected amount of dice plus bonus.
 Dice Explosion!
 If you roll the maximum possible roll on a dice, it will add another dice to the roll. For example If you roll 10 D6s, and 2 of them roll 6, you will add 2 more dice. This continues until the dice stops rolling a 6.
 ## Technologies Used
-### HTML:
+#### HTML:
 Basic language used to create the website.
-### JavaScript:
+#### JavaScript:
 The Random Number Generator is written in JavaScript.
-### Google Fonts:
+#### Google Fonts:
 Utilized Google's Font Set.
-### Bootstrap:
+#### Bootstrap:
 The project utilizes Bootstraps front-end component library.
-### JQuery:
+#### JQuery:
 Plugged into the JQuery Library in order to edit hosted HTML.
-### GitPod:
+#### GitPod:
 For their IDE.
-### GitHub:
+#### GitHub:
 For Version control and hosting.
-### InkScape Photo Editor:
+#### InkScape Photo Editor:
 Creating Dice Images in .SVG format.
 ## Testing
 Tested by me through repetition.
