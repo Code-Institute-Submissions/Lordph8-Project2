@@ -19,6 +19,9 @@
     .total{
         font-size: 1.5em;
     }
+    datalist {
+  display: none;
+}
     code{
       padding: 0 .25em;
       color: #444;

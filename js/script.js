@@ -132,13 +132,7 @@ function roll() {
         if (special == 'Get Min Roll') {
 
             var disAdvantage = Number(Math.min(...log)) + bonus; 
-            $( ".pictures" ).empty();
-            if (tDice == 'd100') {
-                $('.pictures').append('<img id= "picture" src= ' + folder + '/' + (disAdvantage - bonus) +'.svg style= "width: 100px; height: 100px;" />');
-            } else {
-                $('.pictures').append('<img id= "picture" src= ' + folder + '/' + (disAdvantage - bonus) +'.svg style= "width: 50px; height: 50px;" />');
-            }
-            
+                        
             if (bonus != 0 || bonus != "") {
                 $('.pictures').append('<p class= "total">+ Bonus(' + bonus + ') = ' + disAdvantage + '</p>');
             } else {
@@ -148,13 +142,7 @@ function roll() {
         } else {   
 
             var advantage = Number(Math.max(...log)) + bonus; 
-            $( ".pictures" ).empty();
-            if (tDice == 'd100') {
-                $('.pictures').append('<img id= "picture" src= ' + folder + '/' + (advantage - bonus) +'.svg style= "width: 100px; height: 100px;" />');
-            } else {
-                $('.pictures').append('<img id= "picture" src= ' + folder + '/' + (advantage - bonus) +'.svg style= "width: 50px; height: 50px;" />');
-            }
-
+            
             if (bonus != 0 || bonus != "") {
                 $('.pictures').append('<p class= "total">+ Bonus(' + bonus + ') = ' + advantage + '</p>');
             } else {
