@@ -12,14 +12,16 @@ function roll() {
         $( ".pictures" ).empty();
         for (i = 0; i < nDice; i++) {
             var number = Math.ceil((Math.random()*10)*0.2);
-            var file = folder + '/' + number + '.svg';
+            log.push(number); 
             if (special == 'Dice Explosion!') {
-                while (number % 2 === 0) {
-                    var number = number + Math.ceil((Math.random()*10)*0.2);
+                while (number == 2) {
+                    var number = Math.ceil((Math.random()*10)*0.2);
+                    log.push(number); 
+                    $('.pictures').append('<img id= "picture" src= ' + folder + '/' + number +'.svg style= "width: 50px; height: 50px;" />')
                 }
             } 
             $('.pictures').append('<img id= "picture" src= ' + folder + '/' + number +'.svg style= "width: 50px; height: 50px;" />')
-            log.push(number); 
+            
         }
     }
 
@@ -27,13 +29,15 @@ function roll() {
         $( ".pictures" ).empty();
         for (i = 0; i < nDice; i++) {
             var number = Math.ceil((Math.random()*10)*0.4);
+            log.push(number); 
             if (special == 'Dice Explosion!') {
-                while (number % 4 === 0) {
-                    var number = number + Math.ceil((Math.random()*10)*0.4);
+                while (number == 4) {
+                    var number = Math.ceil((Math.random()*10)*0.4);
+                    log.push(number); 
+                    $('.pictures').append('<img id= "picture" src= ' + folder + '/' + number +'.svg style= "width: 50px; height: 50px;" />')
                 }
             } 
             $('.pictures').append('<img id= "picture" src= ' + folder + '/' + number +'.svg style= "width: 50px; height: 50px;" />')
-            log.push(number); 
         }
     }
 
@@ -41,13 +45,15 @@ function roll() {
         $( ".pictures" ).empty();
         for (i = 0; i < nDice; i++) {
             var number = Math.ceil((Math.random()*10)*0.6);
+            log.push(number); 
             if (special == 'Dice Explosion!') {
-                while (number % 6 === 0) {
-                    var number = number + Math.ceil((Math.random()*10)*0.6);
+                while (number == 6) {
+                    var number = Math.ceil((Math.random()*10)*0.6);
+                    log.push(number); 
+                    $('.pictures').append('<img id= "picture" src= ' + folder + '/' + number +'.svg style= "width: 50px; height: 50px;" />')
                 }
             } 
             $('.pictures').append('<img id= "picture" src= ' + folder + '/' + number +'.svg style= "width: 50px; height: 50px;" />')
-            log.push(number); 
         }
     }
 
@@ -55,13 +61,15 @@ function roll() {
         $( ".pictures" ).empty();
         for (i = 0; i < nDice; i++) {
             var number = Math.ceil((Math.random()*10)*0.8);
+            log.push(number); 
             if (special == 'Dice Explosion!') {
-                while (number % 8 === 0) {
-                    var number = number + Math.ceil((Math.random()*10)*0.8);
+                while (number == 8) {
+                    var number = Math.ceil((Math.random()*10)*0.8);
+                    log.push(number); 
+                    $('.pictures').append('<img id= "picture" src= ' + folder + '/' + number +'.svg style= "width: 50px; height: 50px;" />')
                 }
             } 
             $('.pictures').append('<img id= "picture" src= ' + folder + '/' + number +'.svg style= "width: 50px; height: 50px;" />')
-            log.push(number); 
         }
     }
 
@@ -69,26 +77,30 @@ function roll() {
         $( ".pictures" ).empty();
         for (i = 0; i < nDice; i++) {
             var number = Math.ceil((Math.random()*10));
+            log.push(number); 
             if (special == 'Dice Explosion!') {
-                while (number % 10 === 0) {
-                    var number = number + Math.ceil((Math.random()*10));
+                while (number == 10) {
+                    var number = Math.ceil((Math.random()*10));
+                    log.push(number); 
+                    $('.pictures').append('<img id= "picture" src= ' + folder + '/' + number +'.svg style= "width: 50px; height: 50px;" />')
                 }
             } 
             $('.pictures').append('<img id= "picture" src= ' + folder + '/' + number +'.svg style= "width: 50px; height: 50px;" />')
-            log.push(number); 
         }
     }
     if (tDice == 'd12') {
         $( ".pictures" ).empty();
         for (i = 0; i < nDice; i++) {
             var number = Math.ceil((Math.random()*10)*1.2);
+            log.push(number); 
             if (special == 'Dice Explosion!') {
-                while (number % 12 === 0) {
-                    var number = number + Math.ceil((Math.random()*10)*1.2);
+                while (number == 12) {
+                    var number = Math.ceil((Math.random()*10)*1.2);
+                    log.push(number); 
+                    $('.pictures').append('<img id= "picture" src= ' + folder + '/' + number +'.svg style= "width: 50px; height: 50px;" />')
                 }
             } 
             $('.pictures').append('<img id= "picture" src= ' + folder + '/' + number +'.svg style= "width: 50px; height: 50px;" />')
-            log.push(number); 
         }
     }
 
@@ -96,13 +108,15 @@ function roll() {
         $( ".pictures" ).empty();
         for (i = 0; i < nDice; i++) {
             var number = Math.ceil((Math.random()*20));
+            log.push(number); 
             if (special == 'Dice Explosion!') {
-                while (number % 20 === 0) {
-                    var number = number + Math.ceil((Math.random()*20));
+                while (number == 20) {
+                    var number = Math.ceil((Math.random()*20));
+                    log.push(number); 
+                    $('.pictures').append('<img id= "picture" src= ' + folder + '/' + number +'.svg style= "width: 50px; height: 50px;" />')
                 }
             } 
             $('.pictures').append('<img id= "picture" src= ' + folder + '/' + number +'.svg style= "width: 50px; height: 50px;" />')
-            log.push(number); 
         }
     }
 
@@ -110,34 +124,63 @@ function roll() {
         $( ".pictures" ).empty();
         for (i = 0; i < nDice; i++) {
             var number = Math.ceil((Math.random()*100));
+            log.push(number); 
             if (special == 'Dice Explosion!') {
-                while (number % 100 === 0) {
-                    var number = number + Math.ceil((Math.random()*100));
+                while (number == 100) {
+                    var number = Math.ceil((Math.random()*100));
+                    log.push(number); 
+                    $('.pictures').append('<img id= "picture" src= ' + folder + '/' + number +'.svg style= "width: 50px; height: 50px;" />')
                 }
             } 
-            $('.pictures').append('<img id= "picture" src= ' + folder + '/' + number +'.svg style= "width: 100px; height: 100px;" />')
-            log.push(number); 
+            $('.pictures').append('<img id= "picture" src= ' + folder + '/' + number +'.svg style= "width: 100px; height: 100px;" />');
         }
     }
 
     if (special == 'Get Max Roll' || special == 'Get Min Roll') {
         if (special == 'Get Max Roll') {
             var advantage = Number(Math.max(...log)) + bonus; 
+            $( ".pictures" ).empty();
 
-            document.getElementById('output').value = log.join(", ")  + ' + Bonus(' + bonus + ') = ' + advantage; 
+            if (tDice == 'd100') {
+                $('.pictures').append('<img id= "picture" src= ' + folder + '/' + (advantage - bonus) +'.svg style= "width: 100px; height: 100px;" />');
+            } else {
+                $('.pictures').append('<img id= "picture" src= ' + folder + '/' + (advantage - bonus) +'.svg style= "width: 50px; height: 50px;" />');
+            }
+
+            if (bonus != 0 || bonus != "") {
+            $('.pictures').append('<p class= "total">+ Bonus(' + bonus + ') = ' + advantage + '</p>');
+        } else {
+            $('.pictures').append('<p class= "total"> = ' + advantage + '</p>');
+        }
         } 
             if (special == 'Get Min Roll') {
             var disAdvantage = Number(Math.min(...log)) + bonus; 
+            $( ".pictures" ).empty();
+            if (tDice == 'd100') {
+                $('.pictures').append('<img id= "picture" src= ' + folder + '/' + (advantage + bonus) +'.svg style= "width: 100px; height: 100px;" />');
+            } else {
+                $('.pictures').append('<img id= "picture" src= ' + folder + '/' + (advantage - bonus) +'.svg style= "width: 50px; height: 50px;" />');
+            }
+            
+            if (bonus != 0 || bonus != "") {
+            $('.pictures').append('<p class= "total">+ Bonus(' + bonus + ') = ' + disAdvantage + '</p>');
+        } else {
+            $('.pictures').append('<p class= "total"> = ' + disAdvantage + '</p>');
+        }
 
-            document.getElementById('output').value = log.join(", ")  + ' + Bonus(' + bonus + ') = ' + disAdvantage; 
         } 
     } else {  
         for (x = 0; x < log.length; x++) {
                 var sum = sum + log[x];
         }
         var sum = sum + bonus
-
-        document.getElementById('output').value = log.join(", ")  + ' + Bonus(' + bonus + ') = '+ sum;
+        
+        if (bonus != 0 || bonus != "") {
+            $('.pictures').append('<p class= "total">+ Bonus(' + bonus + ') = ' + sum + '</p>');
+        } else {
+            $('.pictures').append('<p class= "total"> = ' + sum + '</p>');
+        }
+        
     
     }    
 }

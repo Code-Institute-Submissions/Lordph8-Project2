@@ -16,6 +16,9 @@
       flex-direction: column;
       justify-content: space-between;
     }
+    .total{
+        font-size: 1.5em;
+    }
     code{
       padding: 0 .25em;
       color: #444;
@@ -52,7 +55,7 @@
     #header{
       padding: 1rem;
       color: #dfdfdf;
-      background: #8A4E36;
+      background: #000000;
     }
     #header h1{
       margin: 0;
@@ -61,7 +64,7 @@
       padding: 1rem;
       color: #dfdfdf;
       font-size: .75em;
-      background: #8B664F;
+      background: #000000;
     }
     #footer a{
       color: #fff;
