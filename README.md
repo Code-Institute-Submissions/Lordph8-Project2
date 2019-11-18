@@ -33,7 +33,7 @@ For Version control and hosting.
 #### InkScape Photo Editor:
 Creating Dice Images in .SVG format.
 ## Testing
-Tested by me through repetition.
+Tested by me through repetition, and https://jshint.com/
 ## Deployment
 This site is deployed on GitHub Pages.
 ## Media
