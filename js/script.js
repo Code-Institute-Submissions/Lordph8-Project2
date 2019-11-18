@@ -117,12 +117,12 @@ function roll() {
         for (i = 0; i < nDice; i++) {
             var number = Math.ceil((Math.random()*100));
             log.push(number); 
-            $('.pictures').append('<img id= "picture" src= ' + folder + '/' + number +'.svg style= "width: 50px; height: 50px;" />')
+            $('.pictures').append('<img id= "picture" src= ' + folder + '/' + number +'.svg style= "width: 100px; height: 100px;" />')
             if (special == 'Dice Explosion!' && number == 100) {
                 while (number == 100) {
                     var number = Math.ceil((Math.random()*100));
                     log.push(number); 
-                    $('.pictures').append('<img id= "picture" src= ' + folder + '/' + number +'.svg style= "width: 50px; height: 50px;" />')
+                    $('.pictures').append('<img id= "picture" src= ' + folder + '/' + number +'.svg style= "width: 100px; height: 100px;" />')
                 }
             } 
         }
