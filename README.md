@@ -2,7 +2,7 @@
 I am a casual Pen and Paper RPG player (D&D, Shadowrun etc) and in those games you roll dice to dictate whether your actions are successful, and to calculate effects like damage. Sometimes there are quite a lot of dice involved, and a quick roller and calculator is useful.
 ## UX
 Something Simple and effective. Input (number of dice, type of dice, bonus, and options), output which shows images of the dice and the totals in a nice clean UI
-Link to wireframes
+Link to wireframe = https://lordph8.github.io/Project2/wireframe.jpg
 ## Features
 Javascript random number generator that produces outputs based on the type of dice selected. Utilizing that number with the type of dice and JQuery I populate the website with images for each dice result.
 I have build in 3 special Options:
